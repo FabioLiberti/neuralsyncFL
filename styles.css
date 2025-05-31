@@ -339,6 +339,56 @@ nav {
     overflow: hidden;
 }
 
+/* Animated Game Icons */
+.game-icon {
+    font-size: 4rem;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+/* Icon 1 - Neural Network Builder: Floating + Rotating */
+.game-card:nth-child(1) .game-icon {
+    animation: float-rotate 6s ease-in-out infinite;
+    filter: drop-shadow(0 5px 15px rgba(0, 136, 255, 0.5));
+}
+
+/* Icon 2 - Privacy Guardian: Shield Pulse */
+.game-card:nth-child(2) .game-icon {
+    animation: shield-pulse 4s ease-in-out infinite;
+    filter: drop-shadow(0 5px 15px rgba(0, 255, 136, 0.5));
+}
+
+/* Icon 3 - Consensus Quest: Handshake */
+.game-card:nth-child(3) .game-icon {
+    animation: handshake 5s ease-in-out infinite;
+    filter: drop-shadow(0 5px 15px rgba(139, 92, 246, 0.5));
+}
+
+/* Icon 4 - Data Drift Detective: Search */
+.game-card:nth-child(4) .game-icon {
+    animation: detective-search 5s ease-in-out infinite;
+    filter: drop-shadow(0 5px 15px rgba(255, 0, 128, 0.5));
+}
+
+/* Icon 5 - Global Health Crisis: Globe Spin */
+.game-card:nth-child(5) .game-icon {
+    animation: globe-spin 8s linear infinite;
+    filter: drop-shadow(0 5px 15px rgba(0, 212, 255, 0.5));
+}
+
+/* Icon 6 - Model Market: Chart Growth */
+.game-card:nth-child(6) .game-icon {
+    animation: chart-grow 4s ease-in-out infinite;
+    filter: drop-shadow(0 5px 15px rgba(255, 136, 0, 0.5));
+}
+
+/* Hover effects for game icons */
+.game-card:hover .game-icon {
+    transform: scale(1.1);
+    animation-duration: 1s !important;
+}
+
 .game-image::after {
     content: '';
     position: absolute;
@@ -413,10 +463,33 @@ nav {
     justify-content: center;
     font-size: 2rem;
     transition: all 0.3s ease;
+    position: relative;
+}
+
+.tech-icon span {
+    display: inline-block;
+}
+
+/* Different animations for tech icons */
+.tech-item:nth-child(1) .tech-icon span {
+    animation: tech-lock 4s ease-in-out infinite;
+}
+
+.tech-item:nth-child(2) .tech-icon span {
+    animation: tech-network 5s ease-in-out infinite;
+}
+
+.tech-item:nth-child(3) .tech-icon span {
+    animation: tech-game 4s ease-in-out infinite;
+}
+
+.tech-item:nth-child(4) .tech-icon span {
+    animation: tech-health 5s ease-in-out infinite;
 }
 
 .tech-item:hover .tech-icon {
     transform: rotate(360deg) scale(1.1);
+    background: linear-gradient(135deg, var(--medical-green), var(--neural-blue));
 }
 
 /* Partners Section */
@@ -568,6 +641,134 @@ footer {
     }
     50% {
         background-position: 100% 50%;
+    }
+}
+
+/* Game Icon Animations - Reduced Movement */
+@keyframes float-rotate {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-5px) rotate(45deg);
+    }
+    50% {
+        transform: translateY(0) rotate(90deg);
+    }
+    75% {
+        transform: translateY(-5px) rotate(135deg);
+    }
+}
+
+@keyframes shield-pulse {
+    0%, 100% {
+        transform: scale(1) translateY(0);
+    }
+    50% {
+        transform: scale(1.05) translateY(-2px);
+    }
+}
+
+@keyframes handshake {
+    0%, 100% {
+        transform: rotate(-2deg) translateX(0);
+    }
+    25% {
+        transform: rotate(2deg) translateX(2px);
+    }
+    50% {
+        transform: rotate(-2deg) translateX(-2px);
+    }
+    75% {
+        transform: rotate(2deg) translateX(2px);
+    }
+}
+
+@keyframes detective-search {
+    0%, 100% {
+        transform: scale(1) rotate(0deg);
+    }
+    25% {
+        transform: scale(1.05) rotate(-5deg) translateX(-2px);
+    }
+    50% {
+        transform: scale(1.08) rotate(5deg) translateY(-2px);
+    }
+    75% {
+        transform: scale(1.05) rotate(-3deg) translateX(2px);
+    }
+}
+
+@keyframes globe-spin {
+    0% {
+        transform: perspective(200px) rotateY(0deg) rotateX(5deg) translateY(0);
+    }
+    25% {
+        transform: perspective(200px) rotateY(90deg) rotateX(5deg) translateY(-2px);
+    }
+    50% {
+        transform: perspective(200px) rotateY(180deg) rotateX(5deg) translateY(0);
+    }
+    75% {
+        transform: perspective(200px) rotateY(270deg) rotateX(5deg) translateY(-2px);
+    }
+    100% {
+        transform: perspective(200px) rotateY(360deg) rotateX(5deg) translateY(0);
+    }
+}
+
+@keyframes chart-grow {
+    0%, 100% {
+        transform: scaleY(1) translateY(0);
+    }
+    25% {
+        transform: scaleY(1.08) translateY(-2px);
+    }
+    50% {
+        transform: scaleY(0.95) translateY(1px);
+    }
+    75% {
+        transform: scaleY(1.05) translateY(-1px);
+    }
+}
+
+/* Tech Icon Animations - Reduced Movement */
+@keyframes tech-lock {
+    0%, 100% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1.05) rotate(3deg);
+    }
+}
+
+@keyframes tech-network {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+@keyframes tech-game {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes tech-health {
+    0%, 100% {
+        transform: scale(1) translateY(0);
+    }
+    50% {
+        transform: scale(1.05) translateY(-2px);
     }
 }
 
