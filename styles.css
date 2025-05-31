@@ -349,8 +349,8 @@ nav {
 
 /* Icon 1 - Neural Network Builder: Floating + Rotating */
 .game-card:nth-child(1) .game-icon {
-    animation: float-rotate 6s ease-in-out infinite;
-    filter: drop-shadow(0 5px 15px rgba(0, 136, 255, 0.5));
+    animation: float-rotate 8s ease-in-out infinite;
+    filter: drop-shadow(0 5px 5px rgba(0, 136, 255, 0.5));
 }
 
 /* Icon 2 - Privacy Guardian: Shield Pulse */
@@ -650,13 +650,13 @@ footer {
         transform: translateY(0) rotate(0deg);
     }
     25% {
-        transform: translateY(-5px) rotate(45deg);
+        transform: translateY(-2px) rotate(5deg);
     }
     50% {
-        transform: translateY(0) rotate(90deg);
+        transform: translateY(0) rotate(10deg);
     }
     75% {
-        transform: translateY(-5px) rotate(135deg);
+        transform: translateY(-2px) rotate(5deg);
     }
 }
 
