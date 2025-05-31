@@ -6,7 +6,7 @@
 
 > Federated Learning Meets Gaming - Democratizing Medical AI Through Collaborative Intelligence
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: NeuralSyncFL](https://img.shields.io/badge/License-NeuralSyncFL-yellow.svg)](https://opensource.org/licenses/NeuralSyncFL)
 [![Website](https://img.shields.io/badge/Website-NeuralSync.health-00ff88)](https://neuralsync.health)
 [![Twitter Follow](https://img.shields.io/twitter/follow/NeuralSyncFL?style=social)](https://twitter.com/NeuralSyncFL)
 [![Discord](https://img.shields.io/discord/123456789?color=7289da&logo=discord&logoColor=white)](https://discord.gg/neuralsync)
@@ -653,7 +653,7 @@ npm run lint
 
 ## 📄 License
 
-This project is licensed under the MIT License with additional terms for medical applications - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the NeuralSyncFL License with additional terms for medical applications - see the [LICENSE](LICENSE) file for details.
 
 ### Important Legal Notes
 
