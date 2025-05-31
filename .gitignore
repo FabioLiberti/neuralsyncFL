@@ -1,0 +1,60 @@
+# IDE/Editor specific files
+.idea/                 # IntelliJ IDEA, WebStorm, PhpStorm, etc.
+.vscode/               # VS Code
+*.sublime-project
+*.sublime-workspace
+*.DS_Store             # macOS desktop services store
+Thumbs.db              # Windows thumbnail cache
+
+# Dependency directories
+node_modules/          # Node.js dependencies
+vendor/                # PHP Composer dependencies, Ruby Bundler, etc.
+build/                 # Common build output directory
+dist/                  # Common distribution directory
+out/                   # Another common output directory
+target/                # Maven build directory (Java)
+*.jar                  # Java archives
+*.class                # Java compiled classes
+*.war                  # Java web archives
+*.pyc                  # Python compiled files
+__pycache__/           # Python 3 bytecode cache
+.venv/                 # Python virtual environments
+venv/                  # Python virtual environments (another common name)
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+*.bak
+*.tmp
+
+# Operating System generated files
+*.swp                  # Vim swap files
+*.swo                  # Vim swap files
+*~                     # Emacs backup files
+
+# Temporary files, caches, and backups
+temp/
+tmp/
+cache/
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.dmg
+*.iso
+
+# Sensitive information (example, adjust as needed)
+.env                   # Local environment variables
+.env.*.local           # Local environment variables variants
+config.local.php       # Example of local config file
+keys/                  # Directory for sensitive keys (e.g., API keys, private keys)
+
+# Uploads or dynamically generated content (if applicable)
+uploads/
+media/
+generated_files/
+
+# Custom ignored directories (e.g., old versions or specific temporary folders)
+BK&OLDS/
+old_code/
